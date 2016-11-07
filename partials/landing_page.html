@@ -1,0 +1,135 @@
+<div ng-include='"header_footer/header.html"'></div>
+<div id="landing-pg">
+  <div class="topImage">
+    <div class="container">  
+      <div class="main">
+        <span class="col-a">
+          <h1>The fresh, fun way to get your alcohol seller/server certification.</h1>
+          <h2>With SellServeCert, you can get your certification online or even on your mobile device using our app. We make the certification process as intuitive and entertaining as possible.</h2>
+          <span class="state-container">
+            <form id="pick-state">
+              <label class="state" for="repeatSelect">Choose your state: <br></label>
+                <select class="customSelect" name="customSelect" ng-model="data.model">
+                  <option ng-repeat="option in data.states" value="{{option.value}}">{{option.name}}</option>
+                  <!-- <option value="SELECT">Select</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option> -->
+                </select>
+<!--               </span> -->
+              <span class="col-b"></span><br>
+              <!-- <a ng-href="#/state_view" ng-click="submitState()" class="btn-main">Learn more</a> -->
+              <span ng-click="changeView('state_view')" class="btn-main">Learn more</a>
+            </form>
+            <tt>model={{data.model}}</tt>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="learnMore"><i class="fa fa-arrow-circle-down fa-4x" aria-hidden="true"></i></div>
+  <div class="white-space"> </div>
+
+  <div class="supporting">
+    <div class="howItWorks">
+      <div class="howItWorks-title">How it works</div>
+      <div class="container">
+        <span class="col">
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+          <h2>Search</h2>
+          <p>Easily find the right course based on your state using our course finder.</p>
+          <a ng-href="#/how_it_works" class="btn-default btn-supporting">Learn More</a>
+        </span>
+        <span class="col">
+          <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+          <h2>Learn</h2>
+          <p>Access our courses using our site or mobile app. Work at your own pace.</p>
+          <a ng-href="#/how_it_works" class="btn-default btn-supporting">Learn More</a>
+        </span>
+        <span class="col">
+          <i class="fa fa-glass fa-2x" aria-hidden="true"></i>
+          <h2>Work</h2>
+          <p>That's it! Use your new skills and certification in your job!</p>
+          <a ng-href="#/how_it_works" ng-click="newViewClick()" class="btn-default btn-supporting">Learn More</a>
+        </span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="reviews">
+      <div class="reviews-title">What our users have to say</div>
+      <div class="wrapper">
+        <div class="carousel">
+          <div class="inner">
+            <div class="slide active">
+              <p>"Time flew while I was taking this course. Especially because I was able to start and stop watching while doing things like riding the bus and waiting in line to vote!"<br><br>@janedoe</p>
+            </div>
+            <div class="slide">
+              <p>"These courses are so much more fun than other online options. I felt like there was a real effort to make them interesting and entertaining for me - thank you!"<br><br>@abcde</p>
+            </div>
+            <div class="slide">
+              <p>"SellServeCert is awesome! I didn't have to sit in a classroom to get my certification. They made everything super easy and fast. App store reviews don't lie!"<br><br>@billmurray</p>
+            </div>
+          </div>
+          <div class="arrow arrow-left"></div>
+          <div class="arrow arrow-right"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote">
+      <h2> We provide the most efficient, entertaining mobile training programs around. Find out why we're an industry leader in mobile certifications.<br><a ng-href="#/pick_a_state_view" class="btn-text">Find your course and sign up now</a></h2>
+    </div>
+  </div>
+</div>
+<div ng-include='"header_footer/footer.html"'></div>
